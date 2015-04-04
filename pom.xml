@@ -44,6 +44,13 @@
     <url>http://svn.apache.org/viewcvs.cgi/maven/site/trunk/</url>
   </scm>
 
+  <distributionManagement>
+    <site>
+      <id>github</id>
+      <url>scm:git:git@github.com:khmarbaise/maven-site.git</url>
+    </site>
+  </distributionManagement>
+
   <issueManagement>
     <system>jira</system>
     <url>http://jira.codehaus.org/browse/MNGSITE</url>
@@ -87,6 +94,14 @@
   <build>
     <pluginManagement>
       <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-scm-publish-plugin</artifactId>
+          <version>1.1</version>
+          <configuration>
+            <scmBranch>gh-pages</scmBranch>
+          </configuration>
+        </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pdf-plugin</artifactId>
@@ -263,7 +278,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-linkcheck-plugin</artifactId>
-            <version>1.0</version>
+            <version>1.2</version>
             <configuration>
               <excludedLinks>
                 <excludedLink>**/archetype/*</excludedLink>
