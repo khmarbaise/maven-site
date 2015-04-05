@@ -32,7 +32,7 @@ under the License.
   </bannerLeft>
 
   <bannerRight>
-    <src>http://maven.apache.org/images/maventxt_logo_200.gif</src>
+    <src>http://maven.apache.org/images/maven-logo-black-on-white.png</src>
     <href>http://maven.apache.org/</href>
   </bannerRight>
 
