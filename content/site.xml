@@ -74,8 +74,7 @@ under the License.
         <column>Get Maven|Download</column>
         <column>Documentation</column>
         <column>Maven Projects</column>
-        <column>IDE Integration|About Maven</column>
-        <column>Community</column>
+        <column>Community|About Maven</column>
       </bottomNav>
     </reflowSkin>
   </custom>
