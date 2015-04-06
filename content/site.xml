@@ -38,10 +38,17 @@ under the License.
 
   <!-- must work with inheritence but for some reasons not ??  -->
   <skin>
+    <groupId>lt.velykis.maven.skins</groupId>
+    <artifactId>reflow-maven-skin</artifactId>
+    <version>1.1.1</version>
+  </skin>
+  <!--
+  <skin>
     <groupId>org.apache.maven.skins</groupId>
     <artifactId>maven-fluido-skin</artifactId>
     <version>1.4-SNAPSHOT</version>
   </skin>
+  -->
   <!--
   <skin>
     <groupId>org.apache.maven.skins</groupId>
@@ -50,6 +57,28 @@ under the License.
   </skin>
   -->
 
+  <custom>
+    <reflowSkin>
+      <theme>bootswatch-spacelab</theme>
+      <toc>sidebar</toc>
+      <pages>
+       <index>
+        <!-- index.html sections (examples of all available sections) -->
+        <sections>
+          <body />
+         <columns>2</columns>
+        </sections>
+       </index>
+     </pages>
+      <bottomNav>
+        <column>Get Maven|Download</column>
+        <column>Documentation</column>
+        <column>Maven Projects</column>
+        <column>IDE Integration|About Maven</column>
+        <column>Community</column>
+      </bottomNav>
+    </reflowSkin>
+  </custom>
   <body>
     <breadcrumbs>
       <item name="Maven"  href="http://maven.apache.org/index.html" />
